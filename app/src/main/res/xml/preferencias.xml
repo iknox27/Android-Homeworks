@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory
+      android:key="size"
+      android:title="Diseño de la aplicación"
+      >
+
+    <ListPreference
+        android:key="arg_fontSize"
+        android:title="Tamaño de la fuente"
+        android:summary="Digite el tamaño de la fuente"
+        android:entries="@array/sizes"
+        android:entryValues="@array/sizesint"
+        >
+
+    </ListPreference>
+
+    <ListPreference
+        android:entries="@array/colors"
+        android:entryValues="@array/colorshex"
+        android:key="arg_backgroundColor"
+        android:summary="Escoja el color de fondo"
+        android:title="Color de fondo">
+
+    </ListPreference>
+
+    <ListPreference
+        android:key="arg_cols"
+        android:title="Visualización de la lista"
+        android:summary="Escoja el tipo de visualización"
+        android:entries="@array/vis"
+        android:entryValues="@array/vis"
+        >
+
+    </ListPreference>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+      android:key="size"
+      android:title="Manejo de Contactos"
+      >
+
+    <CheckBoxPreference
+        android:title="Eliminar Contactos"
+        android:summary="Activar opción de eliminar"
+        android:key="arg_remember"
+        android:order="5"
+        android:enabled="true"/>
+
+  </PreferenceCategory>
+
+
+</PreferenceScreen>

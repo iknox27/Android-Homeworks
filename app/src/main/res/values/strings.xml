@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tarea 4</string>
+    <string name="agregar_nuevo_contacto">Agregar Nuevo Contacto</string>
+    <string name="lista_de_contactos">Lista de Contactos</string>
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="spinner_title">Provincias</string>
+    <string name="empty_list">No existen usuarios </string>
+    <string name="choose">Escoger</string>
+    <string name="detalles">Detalles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

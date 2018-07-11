@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fireblend.uitest.ui.ManageContactActivity"
+    android:padding="16dp">
+
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.fireblend.uitest.ui.ManageContactActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creación de Usuario"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="10dp">
+        
+        <TextView
+            android:text="Nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"/>
+
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="77"
+            android:maxLines="1"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LEmaill"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/lName"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:text="Correo Electrónico" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/addEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="77"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LAge"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/LEmaill"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Edad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:layout_marginTop="20dp"/>
+
+        <SeekBar
+            android:layout_marginTop="20dp"
+            android:id="@+id/addAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/TextEdad"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:layout_marginTop="20dp"
+            android:textAlignment="viewEnd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LPhone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/LAge"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Número de Telefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"/>
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:id="@+id/addNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="77"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:digits="0123456789+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/LPhone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Provincia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"/>
+
+        <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_title"
+        android:layout_weight="77"/>
+
+    </LinearLayout>
+    
+
+    <Button
+        android:layout_below="@+id/ll2"
+        android:id="@+id/addButton"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:text="Agregar"/>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PreferencesActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingTop="16dp"
+            android:id="@+id/rlSizeChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerborder"
+            >
+
+            <TextView
+                android:paddingLeft="16dp"
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tamaño de la fuente"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:paddingLeft="16dp"
+                android:layout_below="@+id/txt12"
+                android:id="@+id/txtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12sp"
+                android:textColor="#A9A9A9"
+                android:textSize="16sp"
+                android:paddingBottom="16dp"
+                />
+
+        </RelativeLayout>
+
+        <!--BACKGROUNDCOLOR -->
+
+        <RelativeLayout
+            android:layout_below="@+id/rlSizeChange"
+            android:paddingTop="16dp"
+            android:id="@+id/backGrounfR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerborder"
+            >
+
+            <TextView
+                android:paddingLeft="16dp"
+                android:id="@+id/bac12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color de Fondo"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:paddingLeft="16dp"
+                android:layout_below="@+id/bac12"
+                android:id="@+id/backC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blanco"
+                android:textColor="#A9A9A9"
+                android:textSize="16sp"
+                android:paddingBottom="16dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:paddingTop="16dp"
+            android:id="@+id/buttonscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerborder"
+            android:paddingBottom="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar Contactos"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:paddingBottom="5dp" />
+
+                <Switch
+                    android:layout_weight="0.5"
+                    android:id="@+id/simpleSwitch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:checked="false"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="16dp"
+                android:id="@+id/columns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layerborder"
+                >
+
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:id="@+id/columns12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visualización de la Lista de Contactos"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:paddingBottom="5dp"
+                    />
+
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:layout_below="@+id/columns12"
+                    android:id="@+id/cols123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lista"
+                    android:textColor="#A9A9A9"
+                    android:textSize="16sp"
+                    android:paddingBottom="16dp"
+                    />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.DetallesContactoActivity">
+
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Nombre"/>
+
+            <TextView
+                android:id="@+id/nameDetail"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_below="@id/line"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"/>
+
+            <TextView
+                android:id="@+id/emailD"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_below="@id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Edad"/>
+
+            <TextView
+                android:id="@+id/ageDET"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_below="@id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Número de Teléfono"/>
+
+            <TextView
+                android:id="@+id/numDeta"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_below="@id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Provincia"/>
+
+            <TextView
+                android:id="@+id/provD"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line5"
+            android:layout_below="@id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/descargar"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:text="Descargar"
+                android:background="@color/colorAccent"
+                android:textColor="@color/primaryLight"
+                />
+
+            <Button
+                android:id="@+id/buttonDel"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:text="Eliminar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/primaryLight"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
